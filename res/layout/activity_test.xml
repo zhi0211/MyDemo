@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:fitsSystemWindows="true"
+	android:orientation="vertical">
+
+	<SeekBar
+		android:id="@+id/seekbar"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:progressDrawable="@drawable/progressbar_seekbar_style_one"/>
+
+	<Button
+		android:id="@+id/button"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"
+		android:text="跳转"/>
+
+	<EditText
+		android:id="@+id/editText"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"
+		android:ems="10"
+		android:inputType="number"/>
+
+
+	<TextView
+		android:id="@+id/text"
+		android:layout_width="100dip"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:ellipsize="marquee"
+		android:focusableInTouchMode="true"
+		android:focusable="true"
+		android:singleLine="true"
+		android:scrollHorizontally="true"
+		android:marqueeRepeatLimit="marquee_forever"
+		android:text="走马灯效果的演示0123456789qwertyuiop[]asdfghjkl;'zxcvbnm,."/>
+
+
+	<Button
+		android:id="@+id/button1"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"
+		android:text="更换文字"/>
+
+
+</LinearLayout>

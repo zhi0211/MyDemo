@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/aqua"
+	android:orientation="vertical">
+
+	<FrameLayout
+		android:id="@+id/container"
+		android:layout_width="200dp"
+		android:layout_height="200dp"/>
+
+
+	<org.gxz.mydemo.rocker.DirectionView
+		android:id="@+id/directionview"
+		android:layout_width="100dp"
+		android:layout_height="100dp"
+		android:layout_gravity="center"
+		android:background="@android:color/transparent"/>
+
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="bottom"
+		android:layout_marginBottom="50dp"
+		android:orientation="horizontal">
+
+		<Button
+			android:id="@+id/button_up"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_margin="20dp"
+			android:layout_weight="1"
+			android:text="上"/>
+
+		<Button
+			android:id="@+id/button_down"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_margin="20dp"
+			android:layout_weight="1"
+			android:text="下"/>
+
+		<Button
+			android:id="@+id/button_left"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_margin="20dp"
+			android:layout_weight="1"
+			android:text="左"/>
+
+		<Button
+			android:id="@+id/button_right"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_margin="20dp"
+			android:layout_weight="1"
+			android:text="右"/>
+	</LinearLayout>
+
+</FrameLayout>

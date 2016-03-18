@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <org.gxz.mydemo.widgets.RatingBarView
+            android:id="@+id/rating_bar_view_setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <org.gxz.mydemo.widgets.RatingBarView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip" />
+
+        <org.gxz.mydemo.widgets.RatingBarView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip" />
+
+        <org.gxz.mydemo.widgets.RatingBarView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip" />
+
+        <EditText
+            android:id="@+id/rating_bar_view_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip" />
+
+        <Button
+            android:id="@+id/rating_bar_view_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:text="设置星星个数" />
+        
+        <EditText
+            android:id="@+id/rating_bar_view_edit1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip" />
+
+        <Button
+            android:id="@+id/rating_bar_view_btn1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:text="设置条长度" />
+    </LinearLayout>
+
+</RelativeLayout>

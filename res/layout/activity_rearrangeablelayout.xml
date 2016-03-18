@@ -1,0 +1,15 @@
+
+<org.gxz.mydemo.drag.rearrangeable.RearrangeableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rearrangeable_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    app:outlineWidth="10dp"
+    app:outlineColor="@color/cyan"
+    app:selectionAlpha="1"
+    app:selectionZoom="1.0"
+    >
+
+</org.gxz.mydemo.drag.rearrangeable.RearrangeableLayout>

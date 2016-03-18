@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+	package="org.gxz.mydemo"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:versionCode="1"
+	android:versionName="1.0">
+
+	<uses-sdk
+		android:minSdkVersion="14"
+		android:targetSdkVersion="22"/>
+
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+	<uses-permission android:name="android.permission.READ_CONTACTS"/>
+	<uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+	<uses-permission android:name="android.permission.READ_SMS"/>
+	<uses-permission android:name="android.permission.WRITE_SMS"/>
+	<uses-permission android:name="android.permission.RECEIVE_SMS"/>
+	<uses-permission android:name="android.permission.SEND_SMS"/>
+	<uses-permission android:name="android.permission.CAMERA"/>
+	<uses-permission android:name="android.permission.VIBRATE"/>
+	<uses-permission android:name="android.permission.FLASHLIGHT"/>
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	<uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+	<uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission android:name="android.permission.INTERNET"/>
+
+	<uses-feature android:name="android.hardware.camera"/>
+	<uses-feature android:name="android.hardware.camera.autofocus"/>
+
+	<application
+		android:name=".DemoApplication"
+		android:allowBackup="true"
+		android:icon="@drawable/ic_launcher"
+		android:label="@string/app_name"
+		android:theme="@style/AppTheme">
+		<activity
+			android:name=".MainActivity"
+			android:theme="@android:style/Theme.Light.NoTitleBar">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN"/>
+
+				<category android:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity>
+		<activity
+			android:name=".contact.ContactListActivity"
+			android:theme="@android:style/Theme.Light.NoTitleBar">
+		</activity>
+		<activity
+			android:name=".main.tabhost.MyFramentActivity"
+			android:theme="@android:style/Theme.Light.NoTitleBar">
+		</activity>
+		<activity
+			android:name=".anim.WelcomeActivity"
+			android:theme="@android:style/Theme.Light.NoTitleBar">
+		</activity>
+		<activity
+			android:name=".main.activitygroup.MyGroupActivity"
+			android:theme="@android:style/Theme.Light.NoTitleBar">
+		</activity>
+		<activity
+			android:name=".main.activitygroup.ViewPagerActivity1"
+			android:theme="@android:style/Theme.Light.NoTitleBar">
+		</activity>
+		<activity
+			android:name=".main.activitygroup.ViewPagerActivity2"
+			android:theme="@android:style/Theme.Light.NoTitleBar">
+		</activity>
+		<activity
+			android:name=".main.activitygroup.ViewPagerActivity3"
+			android:theme="@android:style/Theme.Light.NoTitleBar">
+		</activity>
+		<activity
+			android:name=".main.activitygroup.ViewPagerActivity4"
+			android:theme="@android:style/Theme.Light.NoTitleBar">
+		</activity>
+		<activity
+			android:name=".main.activitygroup.ViewPagerActivity5"
+			android:theme="@android:style/Theme.Light.NoTitleBar">
+		</activity>
+		<activity
+			android:name=".main.activitygroup.ViewPagerActivity6"
+			android:theme="@android:style/Theme.Light.NoTitleBar">
+		</activity>
+		<activity
+			android:name=".main.manyfragments.ViewPagerDemoActivity"
+			android:theme="@android:style/Theme.Light.NoTitleBar">
+		</activity>
+		<activity
+			android:name=".main.mytab.MyTabActivity"
+			android:theme="@android:style/Theme.Light.NoTitleBar"
+			android:windowSoftInputMode="stateHidden|adjustResize">
+		</activity>
+		<activity
+			android:name=".main.mytab.MyHomeActivity"
+			android:theme="@android:style/Theme.Light.NoTitleBar">
+		</activity>
+		<activity
+			android:name=".main.mytab.MyMoodActivity"
+			android:theme="@android:style/Theme.Light.NoTitleBar">
+		</activity>
+		<activity
+			android:name=".main.mytab.MyMsgActivity"
+			android:theme="@android:style/Theme.Light.NoTitleBar">
+		</activity>
+		<activity
+			android:name=".main.mytab.MySettingActivity"
+			android:theme="@android:style/Theme.Light.NoTitleBar">
+		</activity>
+		<activity
+			android:name=".main.mytab.ConversationsActivity"
+			android:theme="@android:style/Theme.Light.NoTitleBar"
+			android:windowSoftInputMode="stateHidden|adjustResize">
+		</activity>
+		<activity
+			android:name=".listview.toudelete.MyListViewActivity"
+			android:theme="@android:style/Theme.Light.NoTitleBar">
+		</activity>
+		<activity
+			android:name=".listview.draglist.DragListActivity"
+			android:theme="@android:style/Theme.Light.NoTitleBar">
+		</activity>
+		<activity
+			android:name=".listview.itemdrag.MyWeiXinListviewActivity"
+			android:theme="@android:style/Theme.Light.NoTitleBar"
+			android:windowSoftInputMode="stateHidden|adjustResize">
+		</activity>
+		<activity
+			android:name=".listview.popuwindow.PopuListDemoActivity"
+			android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+		<activity
+			android:name=".timeselect.WheelActivity"
+			android:theme="@android:style/Theme.Light.NoTitleBar">
+		</activity>
+		<activity
+			android:name=".check.slideswitch.SlideSwitchActivity"
+			android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+		<activity
+			android:name=".check.preference.CycleTemplate"
+			android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+		<activity
+			android:name=".check.preference.TimeSelection"
+			android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+		<activity
+			android:name=".img.bitmapgray.BitmapDealActivity"
+			android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+		<activity
+			android:name=".spannablestringbuilder.SpanStringBuilderActivity"
+			android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+		<activity
+			android:name=".rotatetextview.RotateTextActivity"
+			android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+		<activity
+			android:name=".progress.styleprogress.MyProgressActivity"
+			android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+		<activity
+			android:name=".listview.expanddraglistview.ExpandableDragListActivity"
+			android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+		<activity
+			android:name=".ratingbar.RatingBarViewActivity"
+			android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+		<activity
+			android:name=".chart.ChartActivity"
+			android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+		<activity
+			android:name=".capture.qrcode.CaptureActivity"
+			android:configChanges="orientation|keyboardHidden"
+			android:screenOrientation="portrait"
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+			android:windowSoftInputMode="stateAlwaysHidden">
+		</activity>
+		<activity
+			android:name=".telinfo.TelManager"
+			android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+		<activity
+			android:name=".wifi.WifiActivity"
+			android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+		<activity
+			android:name=".spinner.SelectActivity"
+			android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+		<activity
+			android:name=".webview.third.QQLoginWeb"
+			android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+
+		<!-- 第三方QQ登入 -->
+		<activity
+			android:name="com.tencent.connect.common.AssistActivity"
+			android:configChanges="orientation|keyboardHidden"
+			android:screenOrientation="portrait"
+			android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+		<activity
+			android:name="com.tencent.tauth.AuthActivity"
+			android:launchMode="singleTask"
+			android:noHistory="true"
+			android:screenOrientation="portrait">
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW"/>
+
+				<category android:name="android.intent.category.DEFAULT"/>
+				<category android:name="android.intent.category.BROWSABLE"/>
+
+				<data android:scheme="tencent101025534"/>
+			</intent-filter>
+		</activity>
+		<!-- 第三方QQ登入 -->
+
+		<activity
+			android:name=".test.TestActivity"
+			android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+		<activity
+			android:name=".circle.CircleActivity"
+			android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+		<activity
+			android:name=".pie.PieActivity"
+			android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+		<activity
+			android:name=".datetime.DateTimePickActivity"
+			android:screenOrientation="portrait"
+			android:theme="@android:style/Theme.Light.NoTitleBar">
+		</activity>
+		<activity
+			android:name=".datetime.DateTimeLayoutActivity"
+			android:screenOrientation="portrait"
+			android:theme="@android:style/Theme.Light.NoTitleBar">
+		</activity>
+		<activity
+			android:name=".holocolorpick.HoloColorPickActivity"
+			android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+		<activity
+			android:name=".video.MyVideoActivity"
+			android:screenOrientation="landscape"
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+		</activity>
+		<activity
+			android:name=".pie.PieActivity2"
+			android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+		<activity
+			android:name=".cycleviewpager.CircleViewPagerActivity"
+			android:theme="@android:style/Theme.Light.NoTitleBar">
+		</activity>
+		<activity
+			android:name=".webview.JsWebBrown"
+			android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+		<activity
+			android:name=".rangeseekbar.RangeSeekBarActivity"
+			android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+		<activity
+			android:name=".img.circleimage.CircleRoundedImageViewActivity"
+			android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+		<activity
+			android:name=".anim.AnimListActivity"
+			android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+		<activity
+			android:name=".anim.MojitianqiActivity"
+			android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+		<activity
+			android:name=".listview.ListViewDemoList"
+			android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+		<activity
+			android:name=".check.CheckDemo"
+			android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+		<activity
+			android:name=".listview.swiperefresh.SwiperefreshListView"
+			android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+		<activity
+			android:name=".listview.zoom.PullToZoomList"
+			android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+		<activity
+			android:name=".webview.WebDemoList"
+			android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+		<activity
+			android:name=".img.ImageViewDemoList"
+			android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+		<activity
+			android:name=".main.MainDemoList"
+			android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+		<activity
+			android:name=".main.residemenu.MenuActivity"
+			android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+		<activity
+			android:name=".main.weixin5.Weixin5Activity"
+			android:icon="@drawable/logo"
+			android:label="微信"
+			android:theme="@style/AppTheme">
+		</activity>
+		<activity
+			android:name=".main.weixin6.WeiXin6Activity"
+			android:icon="@drawable/logo"
+			android:label="微信"
+			android:theme="@style/AppTheme">
+		</activity>
+		<activity
+			android:name=".listview.pull.PullAndLoadMoreActivity"
+			android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+		<activity
+			android:name=".check.togglebtn.ToggleBtnActivity"
+			android:screenOrientation="landscape"
+			android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+		<activity
+			android:name=".capture.CaptureDemoList"
+			android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+		<activity
+			android:name=".listview.horizontal.HorizaontalList"
+			android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+		<activity
+			android:name=".progress.ProgressList"
+			android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+		<activity
+			android:name=".progress.velocimeter.VelocimeterViewActivity"
+			android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+		<activity
+			android:name=".capture.camera.CameraActivity"
+			android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+
+		<activity
+			android:name=".rocker.RockerActivity"
+			android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+		<activity
+			android:name=".anim.ExpandCollapseActivity"
+			android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+
+		<activity
+			android:name=".listview.recyclerView.RecycleActivity"
+			android:theme="@android:style/Theme.NoTitleBar"/>
+
+		<activity
+			android:name=".loading.LoadingDemoList"
+			android:theme="@android:style/Theme.NoTitleBar"/>
+		<activity
+			android:name=".loading.loadingview.LoadingActivity"
+			android:theme="@android:style/Theme.NoTitleBar"/>
+		<activity
+			android:name=".loading.whorl.WhorlActivity"
+			android:theme="@android:style/Theme.NoTitleBar"/>
+
+		<activity
+			android:name=".anim.material.MaterialActivity"
+			android:theme="@android:style/Theme.NoTitleBar"/>
+
+		<activity
+			android:name=".anim.material.DetailActivity"
+			android:theme="@android:style/Theme.NoTitleBar"/>
+
+		<activity
+			android:name=".listview.xrecyclerview.GridActivity"
+			android:theme="@android:style/Theme.NoTitleBar"/>
+
+		<activity
+			android:name=".listview.xrecyclerview.LinearActivity"
+			android:theme="@android:style/Theme.NoTitleBar"/>
+
+
+		<activity
+			android:name=".listview.xrecyclerview.MainActivity"
+			android:theme="@android:style/Theme.NoTitleBar"/>
+
+		<activity
+			android:name=".listview.xrecyclerview.ProgressStyles"
+			android:theme="@android:style/Theme.NoTitleBar"/>
+
+		<activity
+			android:name=".listview.xrecyclerview.StaggeredGridActivity"
+			android:theme="@android:style/Theme.NoTitleBar"/>
+
+		<activity
+			android:name=".listview.pullrefreshLayout.DemoActivity"
+			android:theme="@android:style/Theme.NoTitleBar"/>
+		<activity
+			android:name=".listview.pullrefreshLayout.ListViewActivity"
+			android:theme="@android:style/Theme.NoTitleBar"/>
+		<activity
+			android:name=".listview.pullrefreshLayout.RecyclerViewActivity"
+			android:theme="@android:style/Theme.NoTitleBar"/>
+		<activity
+			android:name=".listview.pullrefreshLayout.ScrollViewActivity"
+			android:theme="@android:style/Theme.NoTitleBar"/>
+
+		<activity
+			android:name=".drag.DragDemoList"
+			android:theme="@android:style/Theme.NoTitleBar"/>
+
+		<activity
+			android:name=".drag.rearrangeable.RearrangeableLayoutActivity"
+			android:theme="@android:style/Theme.NoTitleBar"/>
+		<activity
+			android:name=".systembar.SystemBarActivity"
+			android:theme="@android:style/Theme.Light.NoTitleBar"/>
+
+
+		<activity
+			android:name=".text.marquee.MarqueeActivity"
+			android:theme="@android:style/Theme.Light.NoTitleBar"/>
+
+		<activity
+			android:name=".text.TextListDemo"
+			android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+
+
+		<activity
+			android:name=".listview.swipyrefresh.SwipyActivity"
+			android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+		
+
+		<service
+			android:name="DemoService"
+			android:enabled="true"
+			android:exported="false">
+			<intent-filter>
+				<action android:name=".DemoService">
+				</action>
+			</intent-filter>
+		</service>
+	</application>
+
+</manifest>

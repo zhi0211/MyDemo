@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dip"
+        android:text="时间选择器"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="14sp" />
+
+    <CheckBox
+        android:id="@+id/second_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="秒钟开关" />
+
+    <org.gxz.mydemo.datetime.time.TimePickLayout
+        android:id="@+id/timepick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/picktime_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dip"
+        android:layout_marginTop="20dip"
+        android:textColor="@android:color/black"
+        android:textSize="14sp" />
+
+</LinearLayout>

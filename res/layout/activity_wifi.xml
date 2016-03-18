@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/getwifiinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="获取当前wifi信息" />
+         <Button
+            android:id="@+id/getconfition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="得到配置好的网络" />
+        <Button
+            android:id="@+id/scan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="扫描网络" />
+
+        <Button
+            android:id="@+id/start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="打开Wifi" />
+
+        <Button
+            android:id="@+id/stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="关闭Wifi" />
+
+        <Button
+            android:id="@+id/check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wifi状态" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/wifi_ssid"
+                android:layout_width="0dip"
+                android:hint="wifi ssid"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <EditText
+                android:id="@+id/wifi_password"
+                android:layout_width="0dip"
+                android:hint="wifi 密码"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <EditText
+                android:id="@+id/wifi_type"
+                android:layout_width="0dip"
+                android:hint="wifi 类型"
+                android:text="3"
+                android:inputType="phone"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/wifi_connect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="连接WIFI" />
+        
+        <Button
+            android:id="@+id/connect_old_wifi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="连接已经存储过的wifi" />
+
+        <TextView
+            android:id="@+id/allNetWork"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="当前没有扫描到Wifi网络" />
+    </LinearLayout>
+
+</ScrollView>

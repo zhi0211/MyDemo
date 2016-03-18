@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+     >
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:id="@+id/sms_recevied_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="100dp"
+        android:background="@drawable/bg_received"
+        android:orientation="vertical"
+        android:paddingBottom="5dp"
+        android:paddingTop="30dp" >
+
+        <TextView
+            android:id="@+id/sms_recevied_body"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="left|top"
+            android:paddingLeft="3dp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/sms_recevied_date"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingLeft="3dp"
+            android:textColor="#0000ff"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:id="@+id/sms_sent_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/bg_sent"
+        android:orientation="vertical"
+        android:paddingBottom="30dp"
+        android:paddingTop="5dp" >
+
+        <TextView
+            android:id="@+id/sms_sent_body"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="left|top"
+            android:paddingLeft="3dp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/sms_sent_date"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:paddingLeft="3dp"
+            android:textColor="#0000ff"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</RelativeLayout>

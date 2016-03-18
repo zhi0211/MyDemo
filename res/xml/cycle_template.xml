@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:layout="@layout/logout_prefs_category" />
+
+    <org.gxz.mydemo.check.preference.SlideBoxPreference
+        android:key="cycle_monday"
+        android:summaryOff="off"
+        android:summaryOn="on"
+        android:layout="@layout/prefs_checkedbox_top"
+        android:title="星期一" />
+    <org.gxz.mydemo.check.preference.SlideBoxPreference
+        android:key="cycle_tuesday"
+        android:summaryOff="off"
+        android:layout="@layout/prefs_checkedbox_middle"
+        android:summaryOn="on"
+        android:title="星期二" />
+    <org.gxz.mydemo.check.preference.SlideBoxPreference
+        android:key="cycle_wednesday"
+        android:layout="@layout/prefs_checkedbox_middle"
+        android:summaryOff="off"
+        android:summaryOn="on"
+        android:title="星期三" />
+    <org.gxz.mydemo.check.preference.SlideBoxPreference
+        android:key="cycle_thursday"
+        android:layout="@layout/prefs_checkedbox_middle"
+        android:summaryOff="off"
+        android:summaryOn="on"
+        android:title="星期四" />
+    <org.gxz.mydemo.check.preference.SlideBoxPreference
+        android:key="cycle_friday"
+        android:layout="@layout/prefs_checkedbox_bottom"
+        android:summary="bottom"
+        android:summaryOff="off"
+        android:summaryOn="on"
+        android:title="星期五" />
+
+    <PreferenceCategory android:layout="@layout/logout_prefs_category" />
+
+    <org.gxz.mydemo.check.preference.SlideBoxPreference
+        android:key="cycle_saturday"
+        android:summary="top"
+        android:layout="@layout/prefs_checkedbox_top"
+        android:summaryOff="off"
+        android:summaryOn="on"
+        android:title="星期六" />
+    <org.gxz.mydemo.check.preference.SlideBoxPreference
+        android:key="cycle_sunday"
+        android:layout="@layout/prefs_checkedbox_bottom"
+        android:summary="bottom"
+        android:summaryOff="off"
+        android:summaryOn="on"
+        android:title="星期日" />
+
+    <PreferenceCategory android:layout="@layout/logout_prefs_category" />
+
+</PreferenceScreen>

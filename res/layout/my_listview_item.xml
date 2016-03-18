@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp"
+     android:id="@+id/my_listview_item_layout" 
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+   
+    android:orientation="horizontal" >
+
+    <TextView
+        android:textColor="@color/blue"
+        android:paddingLeft="20dp"
+        android:gravity="left|center_vertical"
+        android:layout_weight="1"
+        android:id="@+id/mylistview_item_tv"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    
+
+</LinearLayout>
+<Button
+    android:visibility="gone"
+        android:id="@+id/mylistview_item_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:background="#ff7700"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="删除" />
+</RelativeLayout>

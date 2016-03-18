@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:icon="@drawable/delete"
+        android:id="@+id/main_menu_exit"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="退出"/>
+    
+    <item
+        android:icon="@drawable/add_contact_1"
+        android:id="@+id/main_menu_restart"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="重启"/>
+    <item
+        android:icon="@drawable/ic_launcher"
+        android:id="@+id/main_menu_test"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="测试"/>
+</menu>

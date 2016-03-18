@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <org.gxz.mydemo.listview.horizontal.HorizontalListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onBtnClick"
+            android:text="Button1" />
+
+        <Button
+            android:id="@+id/btn4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btn5"
+            android:layout_alignBottom="@+id/btn5"
+            android:layout_alignParentLeft="true"
+            android:onClick="onBtnClick"
+            android:text="Button4" />
+
+        <Button
+            android:id="@+id/btn5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn1"
+            android:layout_marginTop="42dp"
+            android:layout_toRightOf="@+id/btn3"
+            android:onClick="onBtnClick"
+            android:text="Button5" />
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btn4"
+            android:layout_toRightOf="@+id/btn1"
+            android:onClick="onBtnClick"
+            android:text="Button3" />
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btn5"
+            android:layout_alignLeft="@+id/btn5"
+            android:onClick="onBtnClick"
+            android:text="Button2" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/btn3"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="50dp"
+            android:textSize="20sp"
+            android:text="TextView" />
+
+    </RelativeLayout>
+
+</LinearLayout>

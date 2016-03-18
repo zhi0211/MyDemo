@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_suiji"
+        android:orderInCategory="100"
+        android:title="随机"/>
+    <item
+        android:id="@+id/menu_ch"
+        android:orderInCategory="100"
+        android:title="重绘1"/>
+    <item
+        android:id="@+id/menu_ch2"
+        android:orderInCategory="100"
+        android:title="重绘2"/>
+
+</menu>

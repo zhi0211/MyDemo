@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/org.gxz.mydemo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff2c2c2c"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+
+    <SeekBar
+        android:id="@+id/seek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/seek"
+        android:orientation="vertical"
+        android:weightSum="1" >
+
+        <org.gxz.mydemo.progress.velocimeter.VelocimeterView
+            android:id="@+id/velocimeter2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            app:digital_number_blur_color="#ffffff"
+            app:digital_number_color="#ffffff"
+            app:external_progress_color="#ffffff"
+            app:inside_progress_color="#55ffffff"
+            app:digital_number_size="70dp"
+            app:max="100"
+            app:units="分" />
+    </LinearLayout>
+
+</RelativeLayout>

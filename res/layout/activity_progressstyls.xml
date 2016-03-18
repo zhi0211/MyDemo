@@ -1,0 +1,644 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:scrollbars="vertical"
+	android:layout_height="match_parent"
+	android:background="#000000">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:orientation="vertical">
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="20dp"
+			android:gravity="center_vertical"
+			android:orientation="horizontal">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="BallPulse:"
+				android:textColor="#dddddd"/>
+
+			<org.gxz.mydemo.listview.xrecyclerview.lib.progressindicator.AVLoadingIndicatorView
+				android:layout_width="50dp"
+				android:layout_height="50dp"
+				android:layout_marginLeft="20dp"
+				app:indicator="BallPulse"/>
+
+
+		</LinearLayout>
+
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="20dp"
+			android:gravity="center_vertical"
+			android:orientation="horizontal">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="BallGridPulse:"
+				android:textColor="#dddddd"/>
+
+			<org.gxz.mydemo.listview.xrecyclerview.lib.progressindicator.AVLoadingIndicatorView
+				android:layout_width="50dp"
+				android:layout_height="50dp"
+				android:layout_marginLeft="20dp"
+				app:indicator="BallGridPulse"/>
+
+
+		</LinearLayout>
+
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="20dp"
+			android:gravity="center_vertical"
+			android:orientation="horizontal">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="BallClipRotate:"
+				android:textColor="#dddddd"/>
+
+			<org.gxz.mydemo.listview.xrecyclerview.lib.progressindicator.AVLoadingIndicatorView
+				android:layout_width="50dp"
+				android:layout_height="50dp"
+				android:layout_marginLeft="20dp"
+				app:indicator="BallClipRotate"/>
+
+
+		</LinearLayout>
+
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="20dp"
+			android:gravity="center_vertical"
+			android:orientation="horizontal">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="BallClipRotatePulse:"
+				android:textColor="#dddddd"/>
+
+			<org.gxz.mydemo.listview.xrecyclerview.lib.progressindicator.AVLoadingIndicatorView
+				android:layout_width="50dp"
+				android:layout_height="50dp"
+				android:layout_marginLeft="20dp"
+				app:indicator="BallClipRotatePulse"/>
+
+
+		</LinearLayout>
+
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="20dp"
+			android:gravity="center_vertical"
+			android:orientation="horizontal">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="SquareSpin:"
+				android:textColor="#dddddd"/>
+
+			<org.gxz.mydemo.listview.xrecyclerview.lib.progressindicator.AVLoadingIndicatorView
+				android:layout_width="50dp"
+				android:layout_height="50dp"
+				android:layout_marginLeft="20dp"
+				app:indicator="SquareSpin"/>
+
+
+		</LinearLayout>
+
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="20dp"
+			android:gravity="center_vertical"
+			android:orientation="horizontal">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="BallClipRotateMultiple:"
+				android:textColor="#dddddd"/>
+
+			<org.gxz.mydemo.listview.xrecyclerview.lib.progressindicator.AVLoadingIndicatorView
+				android:layout_width="50dp"
+				android:layout_height="50dp"
+				android:layout_marginLeft="20dp"
+				app:indicator="BallClipRotateMultiple"/>
+
+
+		</LinearLayout>
+
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="20dp"
+			android:gravity="center_vertical"
+			android:orientation="horizontal">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="BallPulseRise:"
+				android:textColor="#dddddd"/>
+
+			<org.gxz.mydemo.listview.xrecyclerview.lib.progressindicator.AVLoadingIndicatorView
+				android:layout_width="50dp"
+				android:layout_height="50dp"
+				android:layout_marginLeft="20dp"
+				app:indicator="BallPulseRise"/>
+
+
+		</LinearLayout>
+
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="20dp"
+			android:gravity="center_vertical"
+			android:orientation="horizontal">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="BallRotate:"
+				android:textColor="#dddddd"/>
+
+			<org.gxz.mydemo.listview.xrecyclerview.lib.progressindicator.AVLoadingIndicatorView
+				android:layout_width="50dp"
+				android:layout_height="50dp"
+				android:layout_marginLeft="20dp"
+				app:indicator="BallRotate"/>
+
+
+		</LinearLayout>
+
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="20dp"
+			android:gravity="center_vertical"
+			android:orientation="horizontal">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="CubeTransition:"
+				android:textColor="#dddddd"/>
+
+			<org.gxz.mydemo.listview.xrecyclerview.lib.progressindicator.AVLoadingIndicatorView
+				android:layout_width="50dp"
+				android:layout_height="50dp"
+				android:layout_marginLeft="20dp"
+				app:indicator="CubeTransition"/>
+
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="20dp"
+			android:gravity="center_vertical"
+			android:orientation="horizontal">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="BallZigZag:"
+				android:textColor="#dddddd"/>
+
+			<org.gxz.mydemo.listview.xrecyclerview.lib.progressindicator.AVLoadingIndicatorView
+				android:layout_width="50dp"
+				android:layout_height="50dp"
+				android:layout_marginLeft="20dp"
+				app:indicator="BallZigZag"/>
+
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="20dp"
+			android:gravity="center_vertical"
+			android:orientation="horizontal">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="BallZigZagDeflect:"
+				android:textColor="#dddddd"/>
+
+			<org.gxz.mydemo.listview.xrecyclerview.lib.progressindicator.AVLoadingIndicatorView
+				android:layout_width="50dp"
+				android:layout_height="50dp"
+				android:layout_marginLeft="20dp"
+				app:indicator="BallZigZagDeflect"/>
+
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="20dp"
+			android:gravity="center_vertical"
+			android:orientation="horizontal">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="BallTrianglePath:"
+				android:textColor="#dddddd"/>
+
+			<org.gxz.mydemo.listview.xrecyclerview.lib.progressindicator.AVLoadingIndicatorView
+				android:layout_width="50dp"
+				android:layout_height="50dp"
+				android:layout_marginLeft="20dp"
+				app:indicator="BallTrianglePath"/>
+
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="20dp"
+			android:gravity="center_vertical"
+			android:orientation="horizontal">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="BallScale:"
+				android:textColor="#dddddd"/>
+
+			<org.gxz.mydemo.listview.xrecyclerview.lib.progressindicator.AVLoadingIndicatorView
+				android:layout_width="50dp"
+				android:layout_height="50dp"
+				android:layout_marginLeft="20dp"
+				app:indicator="BallScale"/>
+
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="20dp"
+			android:gravity="center_vertical"
+			android:orientation="horizontal">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="LineScale:"
+				android:textColor="#dddddd"/>
+
+			<org.gxz.mydemo.listview.xrecyclerview.lib.progressindicator.AVLoadingIndicatorView
+				android:layout_width="50dp"
+				android:layout_height="50dp"
+				android:layout_marginLeft="20dp"
+				app:indicator="LineScale"/>
+
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="20dp"
+			android:gravity="center_vertical"
+			android:orientation="horizontal">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="LineScaleParty:"
+				android:textColor="#dddddd"/>
+
+			<org.gxz.mydemo.listview.xrecyclerview.lib.progressindicator.AVLoadingIndicatorView
+				android:layout_width="50dp"
+				android:layout_height="50dp"
+				android:layout_marginLeft="20dp"
+				app:indicator="LineScaleParty"/>
+
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="20dp"
+			android:gravity="center_vertical"
+			android:orientation="horizontal">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="BallScaleMultiple:"
+				android:textColor="#dddddd"/>
+
+			<org.gxz.mydemo.listview.xrecyclerview.lib.progressindicator.AVLoadingIndicatorView
+				android:layout_width="50dp"
+				android:layout_height="50dp"
+				android:layout_marginLeft="20dp"
+				app:indicator="BallScaleMultiple"/>
+
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="20dp"
+			android:gravity="center_vertical"
+			android:orientation="horizontal">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="BallPulseSync:"
+				android:textColor="#dddddd"/>
+
+			<org.gxz.mydemo.listview.xrecyclerview.lib.progressindicator.AVLoadingIndicatorView
+				android:layout_width="50dp"
+				android:layout_height="50dp"
+				android:layout_marginLeft="20dp"
+				app:indicator="BallPulseSync"/>
+
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="20dp"
+			android:gravity="center_vertical"
+			android:orientation="horizontal">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="BallBeat:"
+				android:textColor="#dddddd"/>
+
+			<org.gxz.mydemo.listview.xrecyclerview.lib.progressindicator.AVLoadingIndicatorView
+				android:layout_width="50dp"
+				android:layout_height="50dp"
+				android:layout_marginLeft="20dp"
+				app:indicator="BallBeat"/>
+
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="20dp"
+			android:gravity="center_vertical"
+			android:orientation="horizontal">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="LineScalePulseOut:"
+				android:textColor="#dddddd"/>
+
+			<org.gxz.mydemo.listview.xrecyclerview.lib.progressindicator.AVLoadingIndicatorView
+				android:layout_width="50dp"
+				android:layout_height="50dp"
+				android:layout_marginLeft="20dp"
+				app:indicator="LineScalePulseOut"/>
+
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="20dp"
+			android:gravity="center_vertical"
+			android:orientation="horizontal">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="LineScalePulseOutRapid:"
+				android:textColor="#dddddd"/>
+
+			<org.gxz.mydemo.listview.xrecyclerview.lib.progressindicator.AVLoadingIndicatorView
+				android:layout_width="50dp"
+				android:layout_height="50dp"
+				android:layout_marginLeft="20dp"
+				app:indicator="LineScalePulseOutRapid"/>
+
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="20dp"
+			android:gravity="center_vertical"
+			android:orientation="horizontal">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="BallScaleRipple:"
+				android:textColor="#dddddd"/>
+
+			<org.gxz.mydemo.listview.xrecyclerview.lib.progressindicator.AVLoadingIndicatorView
+				android:layout_width="50dp"
+				android:layout_height="50dp"
+				android:layout_marginLeft="20dp"
+				app:indicator="BallScaleRipple"/>
+
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="20dp"
+			android:gravity="center_vertical"
+			android:orientation="horizontal">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="BallScaleRippleMultiple:"
+				android:textColor="#dddddd"/>
+
+			<org.gxz.mydemo.listview.xrecyclerview.lib.progressindicator.AVLoadingIndicatorView
+				android:layout_width="50dp"
+				android:layout_height="50dp"
+				android:layout_marginLeft="20dp"
+				app:indicator="BallScaleRippleMultiple"/>
+
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="20dp"
+			android:gravity="center_vertical"
+			android:orientation="horizontal">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="BallSpinFadeLoader:"
+				android:textColor="#dddddd"/>
+
+			<org.gxz.mydemo.listview.xrecyclerview.lib.progressindicator.AVLoadingIndicatorView
+				android:layout_width="50dp"
+				android:layout_height="50dp"
+				android:layout_marginLeft="20dp"
+				app:indicator="BallSpinFadeLoader"/>
+
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="20dp"
+			android:gravity="center_vertical"
+			android:orientation="horizontal">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="LineSpinFadeLoader:"
+				android:textColor="#dddddd"/>
+
+			<org.gxz.mydemo.listview.xrecyclerview.lib.progressindicator.AVLoadingIndicatorView
+				android:layout_width="50dp"
+				android:layout_height="50dp"
+				android:layout_marginLeft="20dp"
+				app:indicator="LineSpinFadeLoader"/>
+
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="20dp"
+			android:gravity="center_vertical"
+			android:orientation="horizontal">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="TriangleSkewSpin:"
+				android:textColor="#dddddd"/>
+
+			<org.gxz.mydemo.listview.xrecyclerview.lib.progressindicator.AVLoadingIndicatorView
+				android:layout_width="50dp"
+				android:layout_height="50dp"
+				android:layout_marginLeft="20dp"
+				app:indicator="TriangleSkewSpin"/>
+
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="20dp"
+			android:gravity="center_vertical"
+			android:orientation="horizontal">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Pacman:"
+				android:textColor="#dddddd"/>
+
+			<org.gxz.mydemo.listview.xrecyclerview.lib.progressindicator.AVLoadingIndicatorView
+				android:layout_width="50dp"
+				android:layout_height="50dp"
+				android:layout_marginLeft="20dp"
+				app:indicator="Pacman"/>
+
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="20dp"
+			android:gravity="center_vertical"
+			android:orientation="horizontal">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="BallGridBeat:"
+				android:textColor="#dddddd"/>
+
+			<org.gxz.mydemo.listview.xrecyclerview.lib.progressindicator.AVLoadingIndicatorView
+				android:layout_width="50dp"
+				android:layout_height="50dp"
+				android:layout_marginLeft="20dp"
+				app:indicator="BallGridBeat"/>
+
+
+		</LinearLayout>
+
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="20dp"
+			android:gravity="center_vertical"
+			android:orientation="horizontal">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="SemiCircleSpin:"
+				android:textColor="#dddddd"/>
+
+			<org.gxz.mydemo.listview.xrecyclerview.lib.progressindicator.AVLoadingIndicatorView
+				android:layout_width="50dp"
+				android:layout_height="50dp"
+				android:layout_marginLeft="20dp"
+				app:indicator="SemiCircleSpin"/>
+
+
+		</LinearLayout>
+
+
+	</LinearLayout>
+
+</ScrollView>

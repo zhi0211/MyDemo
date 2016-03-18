@@ -1,0 +1,109 @@
+1.在sevice下面建立dialog
+
+需要权限：<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"></uses-permission>
+
+AlertDialog.Builder builder = new Builder(this);
+builder.setTitle(getString(R.string.notice));
+builder.setMessage(getString(R.string.no_wifi_hint));
+builder.setPositiveButton(getString(R.string.confirm), new DialogInterface.OnClickListener() {
+@Override
+public void onClick(DialogInterface dialog, int which) {
+	dialog.dismiss();
+	Intent viewIntent = new Intent("android.intent.action.VIEW", Uri.parse("http://" + item.url));
+	DeviceDetails2.this.startActivity(viewIntent);
+	}
+	});
+	builder.setNegativeButton(getString(R.string.cancel), new DialogInterface.OnClickListener() {
+	@Override
+	public void onClick(DialogInterface dialog, int which) {
+		dialog.dismiss();
+	}
+	});
+	AlertDialog alert=builder.create();
+	alert.getWindow().setType(WindowManager.LayoutParams.TYPE_SYSTEM_ALERT);
+	alert.show();
+而在service中启动intent 需要 intent.addFlag(Intent.Flag_new_task);
+
+
+
+2.设置屏幕
+
+全屏
+ 
+在Activity的onCreate方法中的setContentView(myview)调用之前添加下面代码
+requestWindowFeature(Window.FEATURE_NO_TITLE);//隐藏标题
+getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);//设置全屏
+  
+  常亮
+view.setKeepScreenOn(true)
+
+在我们用Android开发过程中，会碰到Activity在切换到后台或布局从横屏LANDSCAPE切换到PORTRAIT，会重新切换Activity会触发一次onCreate方法。
+在Android开发中这种情况视可以避免的，我们可以在androidmanifest.xml中的activit元素加入这个属性 android:configChanges="orientation|keyboardHidden" 
+就能有效避免oncreat方法的重复加载，
+
+<application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:name=".DemoGPS"
+            android:configChanges="orientation|keyboardHidden"——————————————————————————————
+                  android:label="@string/app_name">
+                  
+同时在Activity的Java文件中重载onConfigurationChanged(Configuration newConfig)这个方法，这样就不会在布局切换或窗口切换时重载等方法。代码如下:
+ 
+ @Override 
+    public void onConfigurationChanged(Configuration newConfig)
+    { 
+        super.onConfigurationChanged(newConfig); 
+     if (this.getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE)
+     {
+//land
+     }
+     else if (this.getResources().getConfiguration().orientation == Configuration.ORIENTATION_PORTRAIT)
+     {
+//port
+     }
+    }
+//------------------------------------------------------
+
+关于Android中Activity的横竖屏切换问题可以通过AndroidManifest.xml文件中的Activity来配置：
+ android:screenOrientation=["unspecified" | "user" | "behind" |"landscape" | "portrait" |"sensor" | "nonsensor"]screenOrientation
+ 用来指定Activity的在设备上显示的方向，每个值代表如下含义：
+
+"unspecified"  默认值 由系统来判断显示方向.判定的策略是和设备相关的，所以不同的设备会有不同的显示方向.
+"landscape"  横屏显示（宽比高要长）
+"portrait" 竖屏显示(高比宽要长)
+"user" 用户当前首选的方向
+"behind" 和该Activity下面的那个Activity的方向一致(在Activity堆栈中的)
+"sensor" 有物理的感应器来决定。如果用户旋转设备这屏幕会横竖屏切换。
+"nosensor" 忽略物理感应器，这样就不会随着用户旋转设备而更改了 （ "unspecified"设置除外 ）。
+
+
+3.创建快捷方式
+
+public void createShortCut(){
+
+　　//创建快捷方式的Intent
+　　Intent shortcutintent = new Intent(com.android.launcher.action.INSTALL_SHORTCUT);
+
+　　//不允许重复创建
+　　shortcutintent.putExtra(duplicate, false);
+
+　　//需要现实的名称
+　　shortcutintent.putExtra(Intent.EXTRA_SHORTCUT_NAME, getString(R.string.shortcutname));
+
+　　//快捷图片
+　　Parcelable icon = Intent.ShortcutIconResource.fromContext(getApplicationContext(), R.drawable.icon);
+　　shortcutintent.putExtra(Intent.EXTRA_SHORTCUT_ICON_RESOURCE, icon);
+
+　　//点击快捷图片，运行的程序主入口
+　　shortcutintent.putExtra(Intent.EXTRA_SHORTCUT_INTENT, new Intent(getApplicationContext() , EnterActivity.class));
+
+　　//发送广播。OK
+　　sendBroadcast(shortcutintent);
+}
+
+4.java 中的指针与list.addAll()
+
+List list1=getList();//指针 数据随着改变
+
+list2.addAll(getList())//拷贝，数据不随改变
+
+5.权限：http://stackoverflow.com/questions/8501306/android-shortcut-access-launcher-db?answertab=votes#tab-top

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:text="一盏离愁孤灯伫立在窗口"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dip"
+        android:rotation="210"
+        android:text="花开就一次成熟我却错过"
+        android:textColor="@android:color/holo_blue_bright"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/textView10"
+        android:layout_marginTop="50dp"
+        android:rotation="240"
+        android:text="谁在用琵琶弹奏一曲东风破"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView10"
+        android:layout_alignParentRight="true"
+        android:rotation="300"
+        android:text="犹记得那年我们都还很年幼"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView9"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="17dp"
+        android:rotation="360"
+        android:text="谁在用琵琶弹奏一曲东风破"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView12"
+        android:layout_alignBottom="@+id/textView12"
+        android:layout_alignLeft="@+id/textView13"
+        android:rotation="330"
+        android:text="而如今琴声幽幽我的等候你没听过"
+        android:textColor="@android:color/holo_purple"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView4"
+        android:layout_alignLeft="@+id/textView2"
+        android:rotation="60"
+        android:text="旧地如重游月圆更寂寞"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView10"
+        android:layout_below="@+id/textView4"
+        android:layout_marginLeft="18dp"
+        android:rotation="270"
+        android:text="岁月在墙上剥落看见小时候"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView1"
+        android:layout_alignRight="@+id/textView6"
+        android:layout_marginBottom="45dp"
+        android:rotation="180"
+        android:text="水向东流时间怎么偷"
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="17dp"
+        android:rotation="90"
+        android:text="夜半清醒的烛火不忍苛责我"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView11"
+        android:layout_alignParentRight="true"
+        android:rotation="120"
+        android:text="一壶漂泊浪迹天涯难入喉"
+        android:textColor="#237490"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView5"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="38dp"
+        android:rotation="30"
+        android:text="我在门后假装你人还没走"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView2"
+        android:layout_alignParentRight="true"
+        android:rotation="150"
+        android:text="你走之后酒暖回忆思念瘦"
+        android:textColor="#ad2398"
+        android:textSize="18sp" />
+
+</RelativeLayout>

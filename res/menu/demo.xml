@@ -1,0 +1,39 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+	  xmlns:tools="http://schemas.android.com/tools"
+	  tools:context=".DemoActivity">
+	<item
+		android:id="@+id/action_material"
+		android:orderInCategory="100"
+		android:showAsAction="never"
+		android:title="Material"/>
+
+	<item
+		android:id="@+id/action_circles"
+		android:orderInCategory="100"
+		android:showAsAction="never"
+		android:title="Circles"/>
+
+	<item
+		android:id="@+id/action_water_drop"
+		android:orderInCategory="100"
+		android:showAsAction="never"
+		android:title="WaterDrop"/>
+
+	<item
+		android:id="@+id/action_ring"
+		android:orderInCategory="100"
+		android:showAsAction="never"
+		android:title="Ring"/>
+
+	<item
+		android:id="@+id/action_smartisan"
+		android:orderInCategory="100"
+		android:showAsAction="never"
+		android:title="Smartisan"/>
+
+	<item
+		android:id="@+id/action_arc"
+		android:orderInCategory="100"
+		android:showAsAction="never"
+		android:title="arc"/>
+</menu>
